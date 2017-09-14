@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.header{
+    background-image: url(sky.jpg);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 35px;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #555473;
+}
+li{
+    float:left;
+}
+li a{
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color:white;
+    color: #3f4055;
+}
+img{
+    float:left;
+    width:50%;
+    height:50%;
+}

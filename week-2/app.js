@@ -1,5 +1,6 @@
-submit.onclick = function(){
-    var submit = document.getElementById("submit");
+var submit = document.getElementById("submit");
+submit.onclick = function () {
+    
     var name = document.getElementById("name");
     var adjective = document.getElementById("adjective");
     var food = document.getElementById("food");
@@ -8,5 +9,5 @@ submit.onclick = function(){
     var place = document.getElementById("place");
     var message = document.getElementById("message");
     
-    message.innerText = name.value + "travel around" + place.value + "with his friend" + friendname.value + "last Sunday." + name.value + "bought some" + adjective.value + food.value + "to" + pet.value + ", but" + pet.value + "doesn't like it."
-}
+    message.innerText = name.value + " travel around " + place.value + " with his friend " + friend.value + " last Sunday. " + name.value + " bought some " + adjective.value + " " + food.value + " to " + pet.value + ", but " + pet.value + " doesn't like it.";
+};

@@ -1,0 +1,44 @@
+body{
+    text-align:center;
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: darkcyan;
+    color: yellow;
+}
+
+h3{
+    color: aliceblue;
+}
+
+#container{
+    width: 600px;
+    margin: 0 auto;
+	width: 600px;
+	margin:0 auto;
+	background-color:#eee;
+	padding:1em;
+}
+
+.add-task{
+    padding:1em;
+	border: 1px solid darkcyan;
+	background-color: #eee;
+	font-family:monospace;
+}
+
+.task{
+      cursor: pointer;
+      position: relative;
+      margin: 5px;
+      padding: 0;
+      border: 1px solid darkcyan;
+      background: #eee;
+      color: black;
+      font-size: 1em;
+      transition: 0.1s;
+}
+
+button{
+    color: darkcyan;
+    background-color: yellow;
+}

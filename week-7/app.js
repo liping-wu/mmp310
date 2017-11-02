@@ -25,7 +25,7 @@ var slides = [
     },
     {
         image: "img3.png",
-        caption: "Mexico. Because people in there don't celebrate it."
+        caption: "Mexico. Because people in there don't celebrate Thanksgiving."
     },
     {
         image: "img11.gif",
@@ -36,15 +36,44 @@ var slides = [
         caption: "Happy Thanksgiving!"
     }
 ];
-for (var i = 0; i < slides.length; i++){
-    var s = slides[i];
+//for (var i = 0; i < slides.length; i++){
+    var i = 0;
+//    var s = slides[i];
     var slideElem = document.createElement("div");
     var img = new Image();
     var cap = document.createElement("p");
+    var previous= document.getElementById("previous");
+    var next =document.getElementById("next");
 
-    img.src = s.image;
-    cap.textContent = s.caption;
+    img.src = slides[i].image;
+    cap.textContent = slides[i].caption;
+    
     slideElem.appendChild(img);
     slideElem.appendChild(cap);
     document.body.appendChild(slideElem);
-}
+    
+//    function prevSlide(){
+        next.onclick = function(){
+            if(i < slides.length-1){
+                i++;
+                img.src = slides[i].image;
+                cap.textContent = slides[i].caption;
+            }
+
+        }
+
+//    function nextSlide(){
+        previous.onclick = function(){
+            if(i > 0){
+                i--;
+                img.src = slides[i].image;
+                cap.textContent = slides[i].caption; 
+            }
+
+        }
+
+
+//next.onclick = nextSlide();
+//previous.onclick = prevSlide(); 
+
+//}

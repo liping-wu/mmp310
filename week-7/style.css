@@ -6,11 +6,15 @@ body{
     color: yellow;
 }
 
-h1{
-    color: aliceblue;
+p{
+    color: black;
 }
 
-button{
+#previous{
+    color: darkcyan;
+    background-color: yellow;
+}
+#next{
     color: darkcyan;
     background-color: yellow;
 }

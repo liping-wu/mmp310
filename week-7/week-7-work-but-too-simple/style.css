@@ -1,0 +1,16 @@
+body{
+    text-align:center;
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: darkcyan;
+    color: yellow;
+}
+
+h1{
+    color: aliceblue;
+}
+
+button{
+    color: darkcyan;
+    background-color: yellow;
+}

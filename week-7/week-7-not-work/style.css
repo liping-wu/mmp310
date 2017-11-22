@@ -1,0 +1,16 @@
+body{
+    text-align:center;
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: darkcyan;
+    color: yellow;
+}
+
+p{
+    color: black;
+}
+
+button{
+    color: darkcyan;
+    background-color: yellow;
+}

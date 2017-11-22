@@ -9,15 +9,15 @@ var slides = [
     },
     {
         image: "img6.jpg",
-        caption: "Dad. Why are so surprised?"
+        caption: "Dad. Why are you so surprised?"
     },
     {
         image: "img7.png",
-        caption: "Because they all celebrate Thanksgiving with Turkey."
+        caption: "Because U.S. people like to celebrate Thanksgiving with Turkeies."
     },
     {
         image: "img12.png",
-        caption: "We will turn like this."
+        caption: "We will turn like this image."
     },
     {
         image: "img6.jpg",
@@ -36,44 +36,34 @@ var slides = [
         caption: "Happy Thanksgiving!"
     }
 ];
+
 //for (var i = 0; i < slides.length; i++){
     var i = 0;
 //    var s = slides[i];
     var slideElem = document.createElement("div");
     var img = new Image();
     var cap = document.createElement("p");
-    var previous= document.getElementById("previous");
-    var next =document.getElementById("next");
 
     img.src = slides[i].image;
     cap.textContent = slides[i].caption;
-    
     slideElem.appendChild(img);
     slideElem.appendChild(cap);
     document.body.appendChild(slideElem);
-    
-//    function prevSlide(){
-        next.onclick = function(){
-            if(i < slides.length-1){
-                i++;
-                img.src = slides[i].image;
-                cap.textContent = slides[i].caption;
-            }
 
+    $('#next-btn').click(function() {
+        if(i < (slides.length - 1)){
+            i++;
+            img.src = slides[i].image;
+            cap.textContent = slides[i].caption;
         }
+    });
 
-//    function nextSlide(){
-        previous.onclick = function(){
-            if(i > 0){
-                i--;
-                img.src = slides[i].image;
-                cap.textContent = slides[i].caption; 
-            }
-
+    $('#prev-btn').click(function() {
+        if(i > 0){
+            i--;
+            img.src = slides[i].image;
+            cap.textContent = slides[i].caption;
         }
-
-
-//next.onclick = nextSlide();
-//previous.onclick = prevSlide(); 
+    });
 
 //}

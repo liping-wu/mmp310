@@ -5,23 +5,35 @@
 body{
     font-family: sans-serif;
 }
-.header{
+header{
     background-image: url(sky.jpg);
     font-size: 1.5em;
     text-align: center;
     padding: 35px;
 }
 .header a{
-    color: white;
+    color:aliceblue;
     text-decoration: none;
+}
+/*
+h1{
+    margin: 9px;
+}
+*/
+h1 a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+     margin: 9px;
 }
 ul{
     list-style-type: none;
     overflow: hidden;
-    background-color: #555473;
+    
 }
 li{
-    float:left;
+    display: inline-block;
+    background: #555470;
 }
 li a{
     font-size: 18px;
